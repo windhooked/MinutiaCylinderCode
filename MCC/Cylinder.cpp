@@ -605,6 +605,14 @@ float Cylinder::similarity(const Cylinder & c) const
 		{
 			norm_diff = sqrt(norma_b + normb_a - 2.0*norm_diff);
 			return 1.0 - (norm_diff/(sqrt(norma_b)+sqrt(normb_a)));
+			            
+			//idea 1:对距离开方
+            /*
+            norm_diff = sqrt(norma_b + normb_a - 2.0*norm_diff);
+            float fRatio=0.0;
+            fRatio=sqrt(norm_diff/(sqrt(norma_b)+sqrt(normb_a)))/1.5;
+            return 1.0 - fRatio;
+            */
 		}
 		else
 			return 0;
