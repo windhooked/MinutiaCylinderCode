@@ -610,7 +610,7 @@ float Cylinder::similarity(const Cylinder & c) const
             /*
             norm_diff = sqrt(norma_b + normb_a - 2.0*norm_diff);
             float fRatio=0.0;
-            fRatio=sqrt(norm_diff/(sqrt(norma_b)+sqrt(normb_a)))/1.5;
+            fRatio=sqrt(norm_diff/(sqrt(norma_b)+sqrt(normb_a)))/1.0;
             return 1.0 - fRatio;
             */
 		}
